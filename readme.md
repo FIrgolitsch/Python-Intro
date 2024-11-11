@@ -24,16 +24,39 @@ following chapters which each have a notebook (Chapter 12-18 are still in develo
 
 ### Getting Started
 
-To get started, you'll need to have Python installed on your machine. You can download it from
-the [official website](https://www.python.org/downloads/). For better environment management, you can use Anaconda which
-you can download from [here](https://www.anaconda.com/products/individual). Miniconda is also a good option if you want
+To get started, you'll need to have Python installed on your machine. To ensure you have a clean python enviornment for
+this tutorial, we will be using Anaconda which you can download
+from [here](https://www.anaconda.com/products/individual). Miniconda is also a good option if you want
 a lightweight version of Anaconda which you can download from [here](https://docs.conda.io/en/latest/miniconda.html).
 The author of this repository uses and recommends Miniconda.
+
+### Downloading the Repository
+
+There are two ways you can download the notebooks and supporting code. One way is to download the repository as a zip
+file. To do this, you can go to the top of this page and click on the green "Code" button and then click on "Download
+ZIP". This will download the repository as a zip file which you can extract to a folder on your machine.
+
+The second way is using git, if you have it installed. You can run the following command in a terminal (MacOs/Linux) or
+command prompt (Windows) to clone the repository:
+
+```bash
+git clone https://github.com/FIrgolitsch/Python-Intro.git
+
+# Or via SSH (if you have set up SSH keys) You can ignore this if you don't know what it means.
+# git clone git@github.com:FIrgolitsch/Python-Intro.git
+
+# This will clone the repository into a folder called python-intro
+# You can move to the folder using the cd command. This will get you ready for the next steps.
+cd python-intro
+
+```
 
 ### Running the Notebooks
 
 To run the notebooks, you'll need to have Jupyter installed. You can set up a minimal environment by running the
-following commands (with Anaconda or Miniconda installed) in a terminal (MacOs/Linux) or command prompt (Windows):
+following commands (with Anaconda or Miniconda installed) in a terminal (MacOs/Linux, search for `terminal` in
+spotlight (MacOS) or in the application directory (Linux)) or command prompt (Windows, search in the start menu for
+`cmd`):
 
 ```bash
 # This will create a new environment called python-intro with Python 3.10 and Jupyter installed
@@ -42,7 +65,8 @@ conda create -n python-intro python=3.10 jupyter
 # This will activate the environment
 conda activate python-intro
 
-# This will install the required packages (run this in the root folder of the repository)
+# This will install the required packages (run this in the root folder of the repository, the "python-intro" 
+# folder where you downloaded the code)
 pip install -r requirements.txt
 
 # This will start Jupyter
