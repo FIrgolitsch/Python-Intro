@@ -25,31 +25,38 @@ following chapters which each have a notebook (Chapter 12-18 are still in develo
 ### Getting Started
 
 To get started, you'll need to have Python installed on your machine. To ensure you have a clean python enviornment for
-this tutorial, we will be using Anaconda which you can download
-from [here](https://www.anaconda.com/products/individual). Miniconda is also a good option if you want
-a lightweight version of Anaconda which you can download from [here](https://docs.conda.io/en/latest/miniconda.html).
-The author of this repository uses and recommends Miniconda.
+this tutorial, we will be using Miniconda. You can download it [here](https://docs.conda.io/en/latest/miniconda.html).
+
+For Windows users specifically, during the installation process, check the box that says "Add Miniconda3 to my
+PATH environment variable". See the screenshot below for reference:
+
+![Miniconda Installation](img/miniconda.jpeg)
+
+After installing Anaconda, restart any command prompt or terminal windows you have open.
 
 ### Downloading the Repository
 
+#### Downloading from the Browser
+
 There are two ways you can download the notebooks and supporting code. One way is to download the repository as a zip
 file. To do this, you can go to the top of this page and click on the green "Code" button and then click on "Download
-ZIP". This will download the repository as a zip file which you can extract to a folder on your machine.
+ZIP". This will download the repository as a zip file which you can extract to a folder on your machine. After
+downloading, extract the zip file.
+
+#### Downloading via Git
 
 The second way is using git, if you have it installed. You can run the following command in a terminal (MacOs/Linux) or
 command prompt (Windows) to clone the repository:
+Only copy the relevant lines form the block below, the comments might not play well with the terminal you are using.
 
 ```bash
 git clone https://github.com/FIrgolitsch/Python-Intro.git
-
-# Or via SSH (if you have set up SSH keys) You can ignore this if you don't know what it means.
-# git clone git@github.com:FIrgolitsch/Python-Intro.git
-
-# This will clone the repository into a folder called python-intro
-# You can move to the folder using the cd command. This will get you ready for the next steps.
-cd python-intro
-
 ```
+
+#### File management
+
+After downloading the repository, you can move the folder to a location where you can easily access it. You can also
+rename the folder to something more memorable if you'd like. You will need this location in the steps below.
 
 ### Running the Notebooks
 
@@ -65,7 +72,15 @@ conda create -n python-intro python=3.10 jupyter
 # This will activate the environment
 conda activate python-intro
 
-# This will install the required packages (run this in the root folder of the repository, the "python-intro" 
+```
+
+Before we execute the next command, we need to navigate to the folder where we downloaded the repository. Remember the
+location where you downloaded the repository? You need to navigate to that location in the terminal or command prompt
+using the `cd` command. For example, `cd Downloads/Python-Intro-main/` if you downloaded the repository to the downloads
+folder on windows and extracted it there.
+
+```bash
+# This will install the required packages (run this in the folder of the repository, the "python-intro" 
 # folder where you downloaded the code)
 pip install -r requirements.txt
 
@@ -73,6 +88,5 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-This will open a new tab in your browser where you can navigate to the notebooks and run them. Make sure to run these
-commands in the root folder of the repository. The folder where you run the `juptyer lab` command will be the root
-folder in the notebook server that will start so you can navigate to the notebooks from there.
+This will open a new tab in your browser where you can navigate to the notebooks and run them. From there, you can start
+with chapter one of this tutorial.
