@@ -1,7 +1,7 @@
 ## Python Introduction
 
 This repository will contain notebooks to help get started with python and learn the fundamentals. It's split into the
-following chapters which each have a notebook:
+following chapters which each have a notebook (Chapter 12-18 are still in development):
 
 * Chapter 01: Introduction to Python
 * Chapter 02: Python Data Types
